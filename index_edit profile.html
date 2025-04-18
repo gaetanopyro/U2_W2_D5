@@ -11,16 +11,54 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="bg-dark">
+  <body class="bg-black">
     <header>
       <nav>
-        <img class="" src="./assets/netflix_logo.png" alt="netflix_logo" width="80" height="44" />
+        <img class="" src="./assets/netflix_logo.png" alt="netflix_logo" width="150" height="95" />
       </nav>
     </header>
-    <main class="d-flex align-items-center">
-      <section>
-        <h1>Edit Profile</h1>
-      </section>
+    <main class="d-flex flex-column align-items-center">
+      <h1 class="text-white mt-5">Edit Profile</h1>
+      <div class="card mb-3 bg-black" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./assets/media/1646830188434.jpg" class="rounded-3 img-fluid rounded-start mt-3" alt="logo_epicode" width="180" height="84" />
+            <i class="bi bi-pencil-fill"></i>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title pt-3 bg-dark text-white p-2">Strive student</h5>
+              <p class="card-text text-white">Language</p>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle text-white bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Italian
+                </button>
+                <ul class="dropdown-menu border-bottom">
+                  <li><button class="dropdown-item" type="button">English</button></li>
+                  <li><button class="dropdown-item" type="button">Spanish</button></li>
+                  <li><button class="dropdown-item" type="button">Russian</button></li>
+                </ul>
+              </div>
+              <p class="text-white">Maturity Settings:</p>
+              <h5 class="card-title pt-3 bg-dark-subtle p-2">ALL MATURITY RATINGS</h5>
+              <p class="text-white">Shoe titles of all maturity ratings for this profile.</p>
+              <button type="button" class="btn btn-outline-secondary">EDIT</button>
+              <hr class="border border-white-2" />
+              <p class="text-white">Autoplay controls</p>
+              <i class="bi bi-check text-white"></i>
+              <p class="text-white">Autoplay next episode in a series on all devices.</p>
+              <i class="bi bi-check text-white"></i>
+              <p class="text-white">Autoplay previews while browsing on all devices.</p>
+              <hr class="border border-white-2" />
+              <div>
+                <button type="button" class="rounded-0 btn btn-outline-secondary bg-white text-black">SAVE</button>
+                <button type="button" class="rounded-0 btn btn-outline-secondary">CANCEL</button>
+                <button type="button" class="rounded-0 btn btn-outline-secondary">DELETE PROFILE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
